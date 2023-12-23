@@ -91,8 +91,11 @@ GROUP BY Ano ORDER BY Quantidade DESC
 ```
 ![Exercicio 7](Imagens/7.png)
 
-## 8 - Buscar os Atores do gênero masculino, retornando o PrimeiroNome, UltimoNome
-
+## 8 - Buscar os Atores do gênero masculino, retornando o PrimeiroNome, UltimoNome ✅
+```sql
+SELECT * FROM Atores
+WHERE Genero = 'M'
+```
 ![Exercicio 8](Imagens/8.png)
 
 ## 9 - Atores do gênero feminino, retornando o PrimeiroNome, UltimoNome, e ordenando pelo PrimeiroNome ✅
@@ -103,8 +106,12 @@ ORDER BY PrimeiroNome
 ```
 ![Exercicio 9](Imagens/9.png)
 
-## 10 - Buscar o nome do filme e o gênero
-
+## 10 - Buscar o nome do filme e o gênero ✅
+```sql
+SELECT Nome, Genero FROM Filmes
+INNER JOIN FilmesGenero ON FilmesGenero.Id = Filmes.Id
+INNER JOIN Generos ON Generos.Id = FilmesGenero.Id
+```
 ![Exercicio 10](Imagens/10.png)
 
 ## 11 - Nome do filme e o gênero do tipo "Mistério"
