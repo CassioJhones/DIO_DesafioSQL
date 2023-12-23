@@ -8,39 +8,25 @@ Para este desafio, você precisará usar seus conhecimentos adquiridos no módul
 Você é responsável pelo banco de dados de um site de filmes, onde são armazenados dados sobre os filmes e seus atores. Sendo assim, foi solicitado para que você realize uma consulta no banco de dados com o objetivo de trazer alguns dados para análises.
 
 ## Proposta
-Você precisará realizar 12 consultas ao banco de dados, cada uma retornando um tipo de informação.
+Você precisará realizar 12 consultas ao banco de dados, cada uma retornando um tipo de informação.<br/>
 O seu banco de dados está modelado da seguinte maneira:
 
 ![Diagrama banco de dados](Imagens/diagrama.png)
 
+## Estrutura do Banco de Dados
 As tabelas sao descritas conforme a seguir:
 
-**Filmes**
-
-Tabela responsável por armazenar informações dos filmes.
-
-**Atores**
-
-Tabela responsável por armazenar informações dos atores.
-
-**Generos**
-
-Tabela responsável por armazenar os gêneros dos filmes.
-
-**ElencoFilme**
-
-Tabela responsável por representar um relacionamento do tipo muitos para muitos entre filmes e atores, ou seja, um ator pode trabalhar em muitos filmes, e filmes
-podem ter muitos atores.
-
-**FilmesGenero**
-
-Tabela responsável por representar um relacionamento do tipo muitos para muitos entre filmes e gêneros, ou seja, um filme pode ter mais de um gênero, e um genêro pode fazer parte de muitos filmes.
+- **Tabela Filmes**   armazena informações dos filmes.
+- **Tabela Atores**   armazena informações dos atores.
+- **Tabela Generos**  armazena os gêneros dos filmes.
+- **Tabela ElencoFilme**   representa um relacionamento do tipo muitos para muitos entre filmes e atores, ou seja, um ator pode trabalhar em muitos filmes, e filmes podem ter muitos atores.
+- **Tabela FilmesGenero**  representa um relacionamento do tipo muitos para muitos entre filmes e gêneros, ou seja, um filme pode ter mais de um gênero, e um genêro pode fazer parte de muitos filmes.
 
 ## Preparando o banco de dados
-Você deverá executar o arquivo **Script Filmes.sql** em seu banco de dados SQL Server, presente na pasta Scripts deste repositório ([ou clique aqui](Script%20Filmes.sql)). Esse script irá criar um banco chamado **Filmes**, contendo as tabelas e os dados necessários para você realizar este desafio.
+Você deverá executar o arquivo **Script Filmes.sql** em seu banco de dados SQL Server, presente na pasta Scripts deste repositório ([ou clique aqui](Script%20Filmes.sql)). <br/>Esse script irá criar um banco chamado **Filmes**, contendo as tabelas e os dados necessários para você realizar este desafio.
 
 ## Objetivo
-Você deverá criar diversas consultas, com o objetivo de retornar os dados a seguir. Abaixo de cada pedido tem o retorno esperado. O seu retorno deve ser igual ao da imagem.
+Você deverá criar diversas consultas, com o objetivo de retornar os dados a seguir. Abaixo de cada pedido tem o retorno esperado. <br/> O seu retorno deve ser igual ao da imagem.
 
 ## 1 - Nome e ano dos filmes✅
 ```sql
@@ -109,13 +95,18 @@ ORDER BY PrimeiroNome
 ## 10 - Buscar o nome do filme e o gênero ✅
 ```sql
 SELECT Nome, Genero FROM Filmes
-INNER JOIN FilmesGenero ON FilmesGenero.Id = Filmes.Id
-INNER JOIN Generos ON Generos.Id = FilmesGenero.Id
+INNER JOIN FilmesGenero ON Filmes.Id = FilmesGenero.IdFilme
+INNER JOIN Generos ON FilmesGenero.IdGenero = Generos.Id
 ```
 ![Exercicio 10](Imagens/10.png)
 
-## 11 - Nome do filme e o gênero do tipo "Mistério"
-
+## 11 - Nome do filme e o gênero do tipo "Mistério" ✅
+```sql
+SELECT Nome, Genero FROM Filmes
+INNER JOIN FilmesGenero ON Filmes.Id = FilmesGenero.IdFilme
+INNER JOIN Generos ON FilmesGenero.IdGenero = Generos.Id
+WHERE Genero = 'Mistério'
+```
 ![Exercicio 11](Imagens/11.png)
 
 ## 12 - Nome do filme e os atores, trazendo o PrimeiroNome, UltimoNome e seu Papel ✅
