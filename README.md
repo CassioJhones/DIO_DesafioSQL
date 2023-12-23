@@ -1,4 +1,4 @@
-# Trilha .NET - Banco de Dados
+# Desafio SQL - Banco de Dados
 > www.dio.me | Cassio 30/10/2023
 
 ## Agradecimentos
