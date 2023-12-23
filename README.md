@@ -1,6 +1,11 @@
 # Trilha .NET - Banco de Dados
 > www.dio.me | Cassio 30/10/2023
 
+## Agradecimentos
+[Bruno Freschi](https://github.com/BrunoFreschiAgger) |
+[Cassia Alvalaz](https://github.com/CassiaAlvalaz) |
+[Gabriel Pimenta](https://github.com/Gabranato).
+
 ## Desafio de projeto
 Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de banco de dados, da trilha .NET da DIO.
 
@@ -26,7 +31,7 @@ As tabelas sao descritas conforme a seguir:
 Você deverá executar o arquivo **Script Filmes.sql** em seu banco de dados SQL Server, presente na pasta Scripts deste repositório ([ou clique aqui](Script%20Filmes.sql)). <br/>Esse script irá criar um banco chamado **Filmes**, contendo as tabelas e os dados necessários para você realizar este desafio.
 
 ## Objetivo
-Você deverá criar diversas consultas, com o objetivo de retornar os dados a seguir. Abaixo de cada pedido tem o retorno esperado. <br/> O seu retorno deve ser igual ao da imagem.
+Você deverá criar diversas consultas, com o objetivo de retornar os dados a seguir. Abaixo de cada pedido tem o retorno esperado. <br/> **O seu retorno deve ser igual ao da imagem.**
 
 ## 1 - Nome e ano dos filmes✅
 ```sql
