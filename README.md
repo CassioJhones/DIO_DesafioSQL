@@ -2,7 +2,7 @@
 > www.dio.me | Cassio 30/10/2023
 
 ## Agradecimentos
-[Bruno Freschi](https://github.com/BrunoFreschiAgger) |
+[Bruno Freschi](https://github.com/BrunoFreschiAgger) Nǐ hǎo👋 |
 [Cassia Alvalaz](https://github.com/CassiaAlvalaz) |
 [Gabriel Pimenta](https://github.com/Gabranato).
 
