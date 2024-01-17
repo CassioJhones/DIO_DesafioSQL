@@ -1,5 +1,9 @@
 # Desafio SQL - Banco de Dados
 > www.dio.me | Cassio 30/10/2023
+>
+> ![Static Badge](https://img.shields.io/badge/Status-Finalizado-brightgreen?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/CassioJhones/DIO_DesafioSQL?style=for-the-badge&label=Project%20Size&labelColor=%23512BD4)
+![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
 
 ## Agradecimentos
 [Bruno Freschi](https://github.com/BrunoFreschiAgger) |
